@@ -3,9 +3,9 @@
 document.getElementById('deposit-btn').addEventListener('click', function () {
     //console.log('Deposit clicked');
     const depositInput = document.getElementById('deposit-input');
-    const depositInputText = depositInput.value;
+    const depositInputString = depositInput.value;
     //console.log(depositInputText);
-    const depositInputFloat = parseFloat(depositInputText);
+    const depositInputFloat = parseFloat(depositInputString);
     //console.log(depositInputDigit);
 
 
@@ -18,12 +18,12 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
 
     depositAmount.innerText = currentDepositAmount.toFixed(2);
 
-    // Calculating Balance Amount:
+    // Calculating Balance Amount with Deposit:
 
     const balanceAmount = document.getElementById('balance-amount');
     const balanceAmountString = balanceAmount.innerText;
     const balanceAmountFloat = parseFloat(balanceAmountString);
-    balance - amount
+
     const currentBalanceAmount = balanceAmountFloat + depositInputFloat;
 
     balanceAmount.innerText = currentBalanceAmount.toFixed(2);
