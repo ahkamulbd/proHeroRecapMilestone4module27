@@ -14,9 +14,19 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
     const depositAmountFloat = parseFloat(depositAmountString);
 
     const currentDepositAmount = depositInputFloat + depositAmountFloat;
-    console.log(currentDepositAmount);
+    //console.log(currentDepositAmount);
 
     depositAmount.innerText = currentDepositAmount.toFixed(2);
+
+    // Calculating Balance Amount:
+
+    const balanceAmount = document.getElementById('balance-amount');
+    const balanceAmountString = balanceAmount.innerText;
+    const balanceAmountFloat = parseFloat(balanceAmountString);
+    balance - amount
+    const currentBalanceAmount = balanceAmountFloat + depositInputFloat;
+
+    balanceAmount.innerText = currentBalanceAmount.toFixed(2);
 
     depositInput.value = '';
 
