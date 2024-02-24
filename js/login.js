@@ -12,9 +12,11 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     userPasswordText.value = '';
 
     if (userEmailTextInput === 'ami@aronno.com' && userPasswordTextInput === '12345') {
-        console.log('Valid User');
+        //console.log('Valid User');
+        window.location.href = 'bank.html';
     }
     else {
-        console.log('Invalid User');
+        //console.log('Invalid User');
+        alert('Please enter valid Email & Password');
     }
 })
